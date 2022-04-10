@@ -7,6 +7,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { ProfileComponent } from './profile/profile.component';
 import { DisplayQuoteComponent } from './display-quote/display-quote.component';
 import { DetailQuoteComponent } from './detail-quote/detail-quote.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DetailQuoteComponent } from './detail-quote/detail-quote.component';
     NavigationComponent,
     ProfileComponent,
     DisplayQuoteComponent,
-    DetailQuoteComponent
+    DetailQuoteComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
