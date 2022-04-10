@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Holtwood+One+SC&family=Pacifico&family=Playfair+Display&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap');
+
+.content{
+    margin-left: 10%;
+    font-family: 'Quicksand';  
+}
+
+h1{
+    font-size: 5vw;
+}
+
+.social{
+    width: 1.5%;
+    margin-right: 1%;
+    margin-left: 2%;
+    filter: opacity(50%);
+}
