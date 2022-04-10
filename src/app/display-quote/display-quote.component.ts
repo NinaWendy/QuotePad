@@ -22,4 +22,10 @@ export class DisplayQuoteComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public likeCounter(quote:Quote){
+    quote.upVote++;
+  }
+  public dislikeCounter(quote:Quote){
+    quote.downVote++;
+  }
 }

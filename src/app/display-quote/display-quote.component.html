@@ -8,11 +8,11 @@
 
         <p *ngIf="quote.visible" class="auth"> ~{{quote.author}}</p>
 
-        <img *ngIf="quote.visible" class="vote" src="../assets/thumbs-up-outline.svg" alt="">
+        <img (click)="likeCounter(quote)" *ngIf="quote.visible" class="vote" src="../assets/thumbs-up-outline.svg" alt="">
     
         <span *ngIf="quote.visible">{{quote.upVote}}</span>
 
-        <img  *ngIf="quote.visible" class="vote" src="../assets/thumbs-down-outline.svg" alt="">
+        <img (click)="dislikeCounter(quote)" *ngIf="quote.visible" class="vote" src="../assets/thumbs-down-outline.svg" alt="">
 
         <span  *ngIf="quote.visible" >{{quote.downVote}}
 
