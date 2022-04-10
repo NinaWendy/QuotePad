@@ -10,8 +10,8 @@ import {Quote} from '../quote';
 export class DisplayQuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote(1,'William W.', "You've gotta dance like there's nobody watching,Love like you'll never be hurt,Sing like there's nobody listening,And live like it's heaven on earth.",'John Doe',new Date(2020,3,14),0,0,false),
-    new Quote(2,'Marilyn Monroe', "Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.",'Jane Doe',new Date(2020,3,14),3,0,false),
+    new Quote(1,'William W.', "You've gotta dance like there's nobody watching,Love like you'll never be hurt,Sing like there's nobody listening,And live like it's heaven on earth.",'John Doe',new Date(2020,3,14),2,0,false),
+    new Quote(2,'Marilyn Monroe', "Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.",'Jane Doe',new Date(2020,3,14),5,0,false),
     new Quote(3,'Neil Gaiman',"Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.",'Anon Hacker',new Date(2022,3,8),0,0,false)
   
   ];
@@ -27,5 +27,13 @@ export class DisplayQuoteComponent implements OnInit {
   }
   public dislikeCounter(quote:Quote){
     quote.downVote++;
+  }
+
+  mostLikedQuote =this.getMostLikedQuote();
+
+  getMostLikedQuote(){
+    let quoteCopy =[...this.quotes];
+    return quoteCopy.sort((curr,next)=>next.upVote - curr.upVote
+    )[0];
   }
 }

@@ -1,5 +1,7 @@
 <ul>
-    <li *ngFor='let quote of quotes'>
+    <li
+      [appHighlight]="quote.upVote === mostLikedQuote.upVote" 
+      *ngFor='let quote of quotes'>
         <p class="writer">@{{quote.writer}}</p>
 
         <p class="date">{{quote.publicationDate}}</p>
