@@ -1,0 +1,35 @@
+img {
+  margin-left: 35%;
+  margin-top: 40%;
+  width: 25%;
+  cursor: pointer;
+  filter: opacity(30%);
+}
+
+img:hover {
+  filter: opacity(100%);
+}
+
+.logo {
+  margin-bottom: 40%;
+  margin-top: 10%;
+  width: 50%;
+  cursor: auto;
+  filter: opacity(100%);
+}
+
+.navigate {
+  border-right: 1px solid rgba(128, 128, 128, 0.164);
+  position: fixed;
+  height: 100vh;
+  width: 7vw;
+}
+
+.copyright {
+  font-size: 1vw;
+  text-align: center;
+  font-family: 'Jost','Sans-serif';
+  position: relative;
+  color: gray;
+  margin-top: 15%;
+}
