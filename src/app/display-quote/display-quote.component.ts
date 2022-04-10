@@ -42,4 +42,8 @@ export class DisplayQuoteComponent implements OnInit {
     quote.publicationDate = new Date(quote.publicationDate)
     this.quotes.push(quote)
   }
+  deleteQuote(){
+  
+  }
+  
 }
