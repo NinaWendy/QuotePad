@@ -1,1 +1,30 @@
-<p>display-quote works!</p>
+<ul>
+    <li *ngFor='let quote of quotes'>
+        <p>@{{quote.writer}}</p>
+
+        <p class="date">{{quote.publicationDate}}</p>
+
+        <p >"{{quote.text}}"</p>
+
+        <p  class="auth"> ~{{quote.author}}</p>
+
+        <img  class="vote" src="../assets/thumbs-up-outline.svg" alt="">
+
+        <!-- <span>{{upVote}}</span> -->
+
+        <img class="vote" src="../assets/thumbs-down-outline.svg" alt="">
+
+        <!-- <span >{{quote.downVote}} </span> -->
+
+         <!-- <p>The number of days since publication:{{quote.publicationDate|daysCounter}} days</p> -->
+
+        <button
+       class="btn btn-info"> Hide/Show
+        </button>
+
+        <button 
+        class="btn btn-danger">Delete
+        </button>
+  </li>
+
+</ul>
