@@ -36,4 +36,10 @@ export class DisplayQuoteComponent implements OnInit {
     return quoteCopy.sort((curr,next)=>next.upVote - curr.upVote
     )[0];
   }
+  addNewQuote(quote:Quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.publicationDate = new Date(quote.publicationDate)
+    this.quotes.push(quote)
+  }
 }
