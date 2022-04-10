@@ -8,7 +8,8 @@ export class Quote {
      public writer:string,
      public publicationDate:Date,
      public upVote: number,
-     public downVote:number
+     public downVote:number,
+     public visible:boolean
      )
     {
         this.id= id;
@@ -18,6 +19,7 @@ export class Quote {
         this.publicationDate=publicationDate;
         this.upVote=upVote;
         this.downVote=downVote;
+        this.visible=visible;
 
     }
 }

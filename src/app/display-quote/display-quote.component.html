@@ -4,25 +4,25 @@
 
         <p class="date">{{quote.publicationDate}}</p>
 
-        <p >"{{quote.text}}"</p>
+        <p *ngIf="quote.visible"  >"{{quote.text}}"</p>
 
-        <p  class="auth"> ~{{quote.author}}</p>
+        <p *ngIf="quote.visible" class="auth"> ~{{quote.author}}</p>
 
-        <img  class="vote" src="../assets/thumbs-up-outline.svg" alt="">
+        <img *ngIf="quote.visible" class="vote" src="../assets/thumbs-up-outline.svg" alt="">
     
-        <span>{{quote.upVote}}</span>
+        <span *ngIf="quote.visible">{{quote.upVote}}</span>
 
-        <img class="vote" src="../assets/thumbs-down-outline.svg" alt="">
+        <img  *ngIf="quote.visible" class="vote" src="../assets/thumbs-down-outline.svg" alt="">
 
-        <span >{{quote.downVote}}
+        <span  *ngIf="quote.visible" >{{quote.downVote}}
 
         </span>
 
-          <!-- <p>The number of days since publication:{{quote.publicationDate|daysCounter}} days</p> -->
+          <!-- <p  *ngIf="showOrHide">The number of days since publication:{{quote.publicationDate|daysCounter}} days</p> -->
         
           <br>
           <br>
-        <button
+        <button (click)="quote.visible=!quote.visible" 
           class="btn btn-info"> Hide/Show
         </button>
 
