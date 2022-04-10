@@ -55,7 +55,6 @@ CodeWars-(https://www.codewars.com/users/the@rt_Coder)
 
 [Go Back to the top](#QuotePad)
 
-## Development server
 
 
 

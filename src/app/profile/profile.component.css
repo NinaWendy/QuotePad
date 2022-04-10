@@ -53,8 +53,13 @@ p{
 }
 .follow{
     margin-top: 5%;
+    font-size: 1.2vw;
+    margin-bottom: 5%;
 }
 .input-group{
     margin-left: 0%;
     width: 130%;
+}
+li{
+    font-size: 1vw;
 }
