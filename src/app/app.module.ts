@@ -8,6 +8,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { DisplayQuoteComponent } from './display-quote/display-quote.component';
 import { DetailQuoteComponent } from './detail-quote/detail-quote.component';
 import { HighlightDirective } from './highlight.directive';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HighlightDirective } from './highlight.directive';
     ProfileComponent,
     DisplayQuoteComponent,
     DetailQuoteComponent,
-    HighlightDirective
+    HighlightDirective,
+    QuoteFormComponent
   ],
   imports: [
     BrowserModule,
